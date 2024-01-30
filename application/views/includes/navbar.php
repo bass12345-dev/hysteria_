@@ -17,13 +17,13 @@
                                         <?php endif; ?>
 
 
-                                         <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1 menuu" data-id="home">
+                                       <!--   <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1 menuu" data-id="home">
                                                 <span class="menu-link py-3">
                                                     <span class="menu-title">Home</span>
                                                     
                                                 </span>
                                                 
-                                            </div>
+                                            </div> -->
                                      
 
                                              <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion me-lg-1">
@@ -71,13 +71,13 @@
                                                 
                                             </div>
 
-                                            <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1 menuu" data-id="members">
+                                            <<!-- div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item here show menu-lg-down-accordion me-lg-1 menuu" data-id="members">
                                                 <span class="menu-link py-3">
                                                     <span class="menu-title">Members</span>
                                                     
                                                 </span>
                                                 
-                                            </div>
+                                            </div> -->
                         
                              
                                      

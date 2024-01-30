@@ -34,47 +34,16 @@ class Singers extends CI_Controller {
 		if(isset($_GET['view'])){
 
 			if($_GET['view'] == 'songs'){
-
-
-
-			
 					$where = array('member_id' => $_GET['id']);
-
 					$singer = $this->GetModel->get_data_selected($this->member_table,$where);
-					
-
 					$where2 = 'singer_songs.si_id = '.$_GET['id'];
-					
 					$songs = $this->GetModel->get2($this->singer_songs,$where2,$this->order_by_desc,$this->order_key);
-
-
-
-					// print_r($songs);
-
-				//     $data = [];
-
-
-                   // foreach ($songs as $row) :
-
-                   //  // array_push($data,$row['song_title']);
-
-
-
-                   // endforeach;
-					
-
 					$data['data'] = $songs;
-
-					
-		
-
-
-
 					$data['singer_name'] = $singer['full_name'];
 					$data['items'] = $songs;	
+					$data['song_types'] = $this->GetModel->get('song_type','asc','type');
 
-					
-					
+				
 
 				$this->load->view('view/view_songs',$data);
 

@@ -1,5 +1,5 @@
 
-        <div id="kt_setlist" class="explore bg-white" data-kt-drawer="true" data-kt-drawer-name="explore" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'350px', 'lg': '100%'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#view_lyrics" data-kt-drawer-close="#kt_explore_close">
+        <div id="kt_setlist" class="explore bg-white" data-kt-drawer="true" data-kt-drawer-name="explore" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'420px', 'lg': '100%'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#view_lyrics" data-kt-drawer-close="#kt_explore_close">
             <!--begin::Card-->
             <div class="card shadow-none rounded-0 w-100">
 

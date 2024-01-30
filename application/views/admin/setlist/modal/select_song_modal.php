@@ -39,13 +39,13 @@
                                                             <!--begin::Select-->
                                                             <select class="form-select fw-bold w-125px" data-control="select2" data-placeholder="Status" data-hide-search="true" id="song_type1">
                                                                 <option value="0" selected="selected">All</option>
-                                                                 <?php
-                                                                    foreach($this->config->item('song_type') as $row):
-                                                                      echo '
-                                                                        <option value="'.$row.'">'.$row.'</option> 
-                                                                      ';
-                                                                    endforeach;
-                                                                    ?> 
+                                                                  <?php 
+                                                                       foreach ($song_types as $row) :
+                                                                           // code...
+                                                                       
+                                                                       ?>
+                                                                    <option value="<?php echo $row['song_type_id'] ?>"><?php echo $row['type'] ?></option>
+                                                                    <?php endforeach; ?>
                                                             </select>
 
                                                            

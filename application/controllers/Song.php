@@ -30,14 +30,12 @@ class Song extends CI_Controller {
         }
     }
 
-    public function load_songs(){
+public function load_songs(){
 	$where1 = 'singer_songs.so_id = songs.song_id';
 	$where2 = 'singer_songs.si_id = '.$_POST['singer_id'];
-	$where3 = 'songs.song_type =  "'.$this->input->post('song_type').'"';
+	$where3 = 'songs.s_type =  "'.$this->input->post('song_type').'"';
 	$songs = $this->GetModel->get4($this->singer_songs,$where1,$where2,$where3,$this->order_by_desc,$this->order_key);
 	echo json_encode($songs);
-
-
 }
 
    
@@ -339,7 +337,7 @@ public function get_songs() {
 		 	'lyrics' => $info['lyrics'],
 		 	'artist_id' => $info['artist_id'],
 		 	'artist_name' => $artist['artist_name'],
-		 	'song_type' => $info['song_type'],
+		 	'song_type' => $info['s_type'],
 		 	'key_chords' => $info['key_c']
 		 );
 
@@ -352,7 +350,7 @@ public function get_songs() {
 	$info = array(
 			'song_title' => $this->input->post('update_song_title'),
 			'artist_id' => $this->input->post('artist_id2'),
-			'song_type' => $this->input->post('update_type'),
+			's_type' => $this->input->post('update_type'),
 			'key_c' => $this->input->post('key_chords'),
 	);
 	$where = array(
@@ -372,7 +370,7 @@ public function get_songs() {
 			'artist_id' => $this->input->post('artist_id'),
 			// 'lyrics' => $this->input->post('lyrics'),
 			// 'location' => $_POST['location'],
-			'song_type' => $_POST['type'],
+			's_type' => $_POST['type'],
 			'created' =>  date('Y-m-d H:i:s', time()));
 
 		$result  = $this->AddModel->add($this->song_table,$info);

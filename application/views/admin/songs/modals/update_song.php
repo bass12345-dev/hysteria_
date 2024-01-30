@@ -56,13 +56,13 @@
                                                                 
                                                                  <select class="form-control form-control-solid mb-3 mb-lg-0" name="update_type">
                                                                     
-                                                                 <?php
-                                                                    foreach($this->config->item('song_type') as $row):
-                                                                      echo '
-                                                                        <option value="'.$row.'">'.$row.'</option> 
-                                                                      ';
-                                                                    endforeach;
-                                                                    ?> 
+                                                                 <?php 
+                                                                       foreach ($song_types as $row) :
+                                                                           // code...
+                                                                       
+                                                                       ?>
+                                                                    <option value="<?php echo $row['song_type_id'] ?>"><?php echo $row['type'] ?></option>
+                                                                    <?php endforeach; ?>
                                                             </select>
                                                             </div>
 

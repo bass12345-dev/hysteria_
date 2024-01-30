@@ -34,7 +34,8 @@ class Songs extends CI_Controller {
 		$data['singers'] = $this->GetModel->get($this->singer_table,$this->order_by_desc,$this->order_key);
 		$where = 'member_id ='.$this->session->userdata('member_id');
 		$data['admin_access'] = $this->CountModel->count1($this->admin_table,$where);
-		$data['singers'] = $this->GetModel->get3($this->member_table,$this->order_by_desc,$this->order_key); 
+		$data['singers'] = $this->GetModel->get3($this->member_table,$this->order_by_desc,$this->order_key);
+		$data['song_types'] = $this->GetModel->get('song_type','asc','type');
 		$this->load->view('admin/index',$data);
 	}
 

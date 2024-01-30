@@ -29,7 +29,7 @@ class Gigs extends CI_Controller {
 			'date' => $this->input->post('date'),
 			'time' => $this->input->post('time'),
 			'created' =>  date('Y-m-d H:i:s', time()),
-            'income' => $this->input->post('income'),
+            // 'income' => $this->input->post('income'),
 			'm_id' => $this->session->userdata('member_id'),
 
 			);
