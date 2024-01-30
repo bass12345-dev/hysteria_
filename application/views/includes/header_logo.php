@@ -2,6 +2,6 @@
                                 <a href="<?php echo base_url() ?>">
                                     <!-- <img alt="Logo" src="assets/media/logos/logo-light.svg" class="h-15px h-lg-20px logo-default" />
                                     <img alt="Logo" src="assets/media/logos/logo-default.svg" class="h-15px h-lg-20px logo-sticky" /> -->
-                                    <h1 class="" style="color: #fff">HYSTERIA</h1>
+                                    <h1 class="" style="color: #fff">Home</h1>
                                 </a>
                             </div>
